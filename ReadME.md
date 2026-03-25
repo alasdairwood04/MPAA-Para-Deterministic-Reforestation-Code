@@ -33,6 +33,10 @@ MPAA-Para-Deterministic-Reforestation-Code/
 ├── Data/                   <-- MUST populate the shapefiles manually (See 'Data Acquisition' below)
 │   ├── MPAA_model_data.csv
 │   ├── distance_matrix_named.csv
+│   ├── BR_Municipios_2024.cpg
+│   ├── BR_Municipios_2024.dbf
+│   ├── BR_Municipios_2024.prj
+│   ├── BR_Municipios_2024.shx
 │   
 │
 ├── Figures/                <-- Generated visualizations (radar plots, maps, etc.)
@@ -53,9 +57,9 @@ Due to GitHub's file size constraints, and spatial shapefiles required to run th
 
 1. **To access the data**: Click [this Google Drive Link](https://drive.google.com/drive/folders/1eYqQlgD9T13tnWwqNcJmfywB5vX8ZDMk?usp=drive_link) to open the project data folder
 
-2. **Download all the files**: Download all components of the shapefile (`BR_Municipios_2024.shp`, `.shx`, `.dbf`, `.prj`, `.cpg`).
+2. **Download the .shp file**: the shapefile `BR_Municipios_2024.shp`. The others (`.shx`, `.dbf`, `.prj`, `.cpg` are already in the /Data folder).
 
-3. **Place in Root Directory**: Place all downloaded files directly inside the /Data folder.
+3. **Place in Root Directory**: Place the `BR_Municipios_2024.shp` downloaded file directly inside the /Data folder.
 
 ## ⚙️ Installation & Setup
 
@@ -99,7 +103,7 @@ The implementation is divided into sequential Jupyter Notebooks to ensure logica
 5. `05_adverse_investor_sensitivity.ipynb`
 - Purpose: Explores an alternative scenario prioritising minimising reversal risk. Adapts model weights to reflect a highly risk-averse funding entity.
 6. `06_budget_sensitivity_analysis.ipynb`
-- Purpose: Parametric analysis that varies the primary constraint (the US$ 489.85M budget) to evaluate how marginal changes in funding impact the optimal spatial allocation and total hectares restored.
+- Purpose: Analysis that varies the primary constraint (the US$ 489.85M budget) to evaluate how marginal changes in funding impact the optimal spatial allocation and total hectares restored. The low budget scenario is US\$ 221.37M 790_000_000 and the high budget scenario is US\$ 790M, with the medium budget being the same as the original US$ 489.85M budget for comparison.
 
 ### 📊 Results & Outputs
 

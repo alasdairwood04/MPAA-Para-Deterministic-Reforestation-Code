@@ -1,7 +1,6 @@
 Data/
-*.shp
+*.cph
 *.dbf
-*.shx
 *.prj
-*.cpg
-*.zip
+*.shx
+*.shp
