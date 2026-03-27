@@ -48,6 +48,7 @@ MPAA-Para-Deterministic-Reforestation-Code/
 ├── 04_heuristic_model.ipynb
 ├── 05_adverse_investor_sensitivity.ipynb
 ├── 06_budget_sensitivity_analysis.ipynb
+├── 07_optimal_budget_ndc.ipynb
 └── ReadME.md
 ```
 
@@ -104,6 +105,8 @@ The implementation is divided into sequential Jupyter Notebooks to ensure logica
 - Purpose: Explores an alternative scenario prioritising minimising reversal risk. Adapts model weights to reflect a highly risk-averse funding entity.
 6. `06_budget_sensitivity_analysis.ipynb`
 - Purpose: Analysis that varies the primary constraint (the US$ 489.85M budget) to evaluate how marginal changes in funding impact the optimal spatial allocation and total hectares restored. The low budget scenario is US\$ 221.37M and the high budget scenario is US\$ 790M, with the medium budget being the same as the original US$ 489.85M budget for comparison.
+7. `07_optimal_budget_ndc.ipynb`
+- Purpose: To quantify the absolute minimum financial investment required to meet the 5 year policy target of restoring 5.65 million hectares in Pará. A Budget minimisation model in formulated without factoring geographical dispersion penalties - but still implementing physical bound constraints
 
 ### 📊 Results & Outputs
 
